@@ -6,6 +6,7 @@ import { handleErros } from './error';
 import usersRoutes from './routes/users.routes';
 import clientsRoutes from './routes/clients.routes';
 import contactsRoutes from './routes/contacts.routes';
+import loginRouter from './routes/login.routes';
 
 const app: Application = express();
 app.use(express.json());
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/register', usersRoutes);
+app.use('/auth',loginRouter)
 app.use('/clients', clientsRoutes);
 app.use('/contacts/', contactsRoutes);
 
