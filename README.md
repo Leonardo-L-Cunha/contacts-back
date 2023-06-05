@@ -1,4 +1,8 @@
-###contacts-back
+# Mobius Client Back-end
+
+## Descrição
+O projeto Mobius Client é uma aplicação que permite criar usuários, fazer login e gerenciar clientes. Com o Mobius Client, você pode adicionar contatos aos clientes para manter um registro organizado e detalhado.
+
 
 ## Instalação
 1. Clone o repositório do Mobius Client para o seu ambiente local.
