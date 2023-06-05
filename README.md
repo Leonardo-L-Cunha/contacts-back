@@ -27,15 +27,21 @@ Exemplo de corpo da requisição:
   "profission": "Develop",(opicional)
   "Avatar":"photo.png",(opicional)
 }
-
-## json
+```
+Exemplo de retorno : 
+```json
 {
-  "id": 1
+  "id": 1,
   "completeName": "Leonardo",
   "email": "mail@example",
   "phone": "(DD)877223122",
   "profission": "Develop",(opicional)
   "Avatar":"photo.png",(opicional),
-  "createadAt": "0000-01-01"
+  "createdAt": "0000-01-01"
 }
+```
+
+
+
+
 
