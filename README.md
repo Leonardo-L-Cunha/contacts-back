@@ -10,7 +10,7 @@
 
 # Rotas Users
 
-Endpoint para Register
+Endpoint para criação do usuario
 
 ## Requisição
  -URL: `http://localhost:3000/register`
@@ -34,7 +34,7 @@ Exemplo de retorno :
 }
 ```
 
-# Endpoint para Login
+# Endpoint para fazer login do usuario
  
 ## Requisição
 -URL: `http://localhost:3000/auth`
@@ -65,6 +65,7 @@ Endpoints para Clients.
 - URL: `http://localhost:3000/clients`
 
 - Content-Type: application/json
+- Bearer Token(precisa de autenticação)
 ### Método: POST
 Exemplo de corpo da requisição:
 
@@ -91,6 +92,7 @@ Exemplo de retorno :
 ```
 ### Método: GET
 - nao precisa de Body
+- Bearer Token(precisa de autenticação)
 - Exemplo de retorno :
 ```json
 {
@@ -107,6 +109,7 @@ Exemplo de retorno :
 ### Método: PACTH 
  - URL:`http://localhost:3000/clients/id`
  - se o ID nao existir retornarar um status 204 e uma mensagem not found
+ - Bearer Token(precisa de autenticação)
  - Exemplo do body :
  
 ```json
@@ -134,6 +137,7 @@ Exemplo de retorno :
 ```
 ### Método: DELETE
   - URL:`http://localhost:3000/clients/id`
+  - Bearer Token(precisa de autenticação)
   - nao precisa de Body
   - Exemplo de retorno:
 
@@ -151,6 +155,7 @@ Endpoints para Contact.
 - URL: `http://localhost:3000/contacts/id/clients`
 
 - Content-Type: application/json
+- Bearer Token(precisa de autenticação)
 ### Método: POST
 Exemplo de corpo da requisição:
 
@@ -173,6 +178,7 @@ Exemplo de retorno :
 ```
 ### Método: GET
 - URL:`http://localhost:3000/contacts/id/clients`
+- Bearer Token(precisa de autenticação)
 - nao precisa de Body
 - Exemplo de retorno :
 ```json
@@ -199,6 +205,7 @@ Exemplo de retorno :
 
 ### Método: PACTH 
  - URL:`http://localhost:3000/contacts/id`
+ - Bearer Token(precisa de autenticação)
  - se o ID nao existir retornarar um status 204 e uma mensagem not found
  - Exemplo do body :
  
