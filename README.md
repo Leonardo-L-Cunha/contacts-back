@@ -28,9 +28,7 @@ Exemplo de corpo da requisição:
   "Avatar":"photo.png",(opicional)
 }
 
-Retorno da requsição:
-
-```json
+## json
 {
   "id": 1
   "completeName": "Leonardo",
