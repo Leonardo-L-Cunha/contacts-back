@@ -23,7 +23,7 @@ Exemplo de corpo da requisição:
 ```json
 {
   "email": "mail@example.com",
-  "password: 1234
+  "password": 1234
 }
 ```
 Exemplo de retorno : 
@@ -46,7 +46,7 @@ Exemplo de corpo da requisição:
 ```json
 {
   "email": "mail@example.com",
-  "password: 1234
+  "password": 1234
 }
 ```
 Exemplo de retorno : 
