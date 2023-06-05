@@ -7,19 +7,23 @@
 4. Execute o comando `npm install` para instalar as dependências do projeto.
 5. Após a conclusão da instalação, execute o comando `npm run dev` para iniciar a aplicação.
 
-## Rota POST - /clients
+### Rotas Clients
 
-Endpoint para adicionar um novo cliente.
+Endpoints para Clients.
 
-### Requisição
+## Requisição
 
 - URL: `http://localhost:3000/clients`
-- Método: POST
-- Content-Type: application/json
 
+- Content-Type: application/json
+# Método: POST
 Exemplo de corpo da requisição:
 
 ```json
 {
-  "completeName": "Leonardo"
+  "completeName": "Leonardo",
+  "email": "mail@example",
+  "phone": "(DD)877223122",
+  "profission": "Develop",(opicional)
+  "Avatar":"photo.png",(opicional)
 }
