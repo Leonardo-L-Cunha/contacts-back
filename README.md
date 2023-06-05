@@ -1,4 +1,4 @@
-## contacts-back
+###contacts-back
 
 ## Instalação
 1. Clone o repositório do Mobius Client para o seu ambiente local.
@@ -6,6 +6,55 @@
 3. Abra o terminal e navegue até o diretório do projeto.
 4. Execute o comando `npm install` para instalar as dependências do projeto.
 5. Após a conclusão da instalação, execute o comando `npm run dev` para iniciar a aplicação.
+
+
+# Rotas Users
+
+Endpoint para Register
+
+## Requisição
+ -URL: `http://localhost:3000/register`
+ 
+ 
+ - Content-Type: application/json
+### Método: POST
+Exemplo de corpo da requisição:
+
+```json
+{
+  "email": "mail@example.com",
+  "password: "1234"
+}
+```
+Exemplo de retorno : 
+```json
+{
+  "id": 1,
+  "email": "mail@example.com"
+}
+```
+
+# Endpoint para Login
+ 
+## Requisição
+-URL: `http://localhost:3000/auth`
+
+ - Content-Type: application/json
+### Método: POST
+Exemplo de corpo da requisição:
+
+```json
+{
+  "email": "mail@example.com",
+  "password: "1234"
+}
+```
+Exemplo de retorno : 
+```json
+{
+ "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+}
+```
 
 # Rotas Clients
 
