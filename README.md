@@ -40,8 +40,56 @@ Exemplo de retorno :
   "createdAt": "0000-01-01"
 }
 ```
+### Método: GET
+- nao precisa de Body
+Exemplo de retorno :
+```json
+{
+  "id": 1,
+  "completeName": "Leonardo",
+  "email": "mail@example",
+  "phone": "(DD)877223122",
+  "profission": "Develop",(opicional)
+  "Avatar":"photo.png",(opicional),
+  "createdAt": "0000-01-01"
+}
+```
 
+### Método: PACTH 
+ - URL:`http://localhost:3000/clients/id`
+ Exemplo do body :
+ 
+```json
+{
+  "completeName": "Leonardo EDIT",
+  "email": "mailEDIT@example",
+  "phone": "(DD)877223122",
+  "profission": "Develop",(opicional)
+  "Avatar":"photo.png",(opicional)
+}
+```
 
+Exemplo de retorno :
 
+```json
+{
+  "id": 1,
+   "completeName": "Leonardo EDIT",
+  "email": "mailEDIT@example",
+  "phone": "(DD)877223122",
+  "profission": "Develop",(opicional)
+  "Avatar":"photo.png",(opicional)
+  "createdAt": "0000-01-01"
+}
+```
+### Método: DELETE
+  - URL:`http://localhost:3000/clients/id`
+  - nao precisa de Body
+Exemplo de retorno:
 
-
+ 
+```json
+{
+  
+}
+```
