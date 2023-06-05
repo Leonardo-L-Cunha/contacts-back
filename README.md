@@ -42,7 +42,7 @@ Exemplo de retorno :
 ```
 ### Método: GET
 - nao precisa de Body
-Exemplo de retorno :
+- Exemplo de retorno :
 ```json
 {
   "id": 1,
@@ -57,7 +57,7 @@ Exemplo de retorno :
 
 ### Método: PACTH 
  - URL:`http://localhost:3000/clients/id`
- Exemplo do body :
+ - Exemplo do body :
  
 ```json
 {
@@ -69,7 +69,7 @@ Exemplo de retorno :
 }
 ```
 
-Exemplo de retorno :
+- Exemplo de retorno :
 
 ```json
 {
@@ -85,11 +85,9 @@ Exemplo de retorno :
 ### Método: DELETE
   - URL:`http://localhost:3000/clients/id`
   - nao precisa de Body
-Exemplo de retorno:
+  - Exemplo de retorno:
 
  
 ```json
-{
-  
-}
+
 ```
