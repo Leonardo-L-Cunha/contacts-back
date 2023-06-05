@@ -8,6 +8,7 @@ const clientsRoutes:Router = Router()
 
 clientsRoutes.post('', ensureUserIsAuth,ensureDataIsValid(ClientSchemaCreate),createClientController)
 clientsRoutes.get('', ensureUserIsAuth,listClientController)
+clientsRoutes.get('/:id', ensureUserIsAuth,listClientController)
 clientsRoutes.patch('/:id', ensureUserIsAuth,ensureDataIsValid(ClientSchemaUpdate),updateClientController)
 clientsRoutes.delete('/:id', ensureUserIsAuth,deleteClientController)
 

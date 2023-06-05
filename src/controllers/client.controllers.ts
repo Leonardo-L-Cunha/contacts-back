@@ -4,6 +4,7 @@ import { createClientService } from '../service/clients/createClient.service';
 import { listClientService } from '../service/clients/listClient.service';
 import { updateClientService } from '../service/clients/updateClient.service';
 import { deleteClientService } from '../service/clients/deleteClient.service';
+import { listUniqueClientService } from '../service/clients/listUniqueClient.service';
 
 const createClientController = async(req: Request, res: Response ): Promise<Response> =>{
     const payload:IclientCreate = req.body
@@ -17,6 +18,14 @@ const listClientController = async(req: Request, res: Response): Promise<Respons
     const clients = await listClientService()
     
     return res.status(200).json(clients)
+}
+
+const listUniqueClientController = async(req: Request, res: Response): Promise<Response> => {
+    const clientId: number = parseInt(req.params.id)
+
+    const client = await listUniqueClientService(clientId)
+
+    return res.status(200).json(client)
 }
 
 const updateClientController = async(req: Request, res: Response): Promise<Response> =>{
@@ -41,5 +50,6 @@ export {
     createClientController,
     listClientController,
     updateClientController,
-    deleteClientController
+    deleteClientController,
+    listUniqueClientController
 }

@@ -7,9 +7,12 @@ import usersRoutes from './routes/users.routes';
 import clientsRoutes from './routes/clients.routes';
 import contactsRoutes from './routes/contacts.routes';
 import loginRouter from './routes/login.routes';
+import bodyParser from 'body-parser';
 
 const app: Application = express();
-app.use(express.json());
+
+app.use(bodyParser.json({ limit: '30mb' }))
+app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 
 app.use(cors());
 
